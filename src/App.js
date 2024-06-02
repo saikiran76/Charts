@@ -5,7 +5,7 @@ import { Data } from './utils/Data';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#0F172A] text-white">
       {/* <CatChart/> */}
       <CatCount/>
    

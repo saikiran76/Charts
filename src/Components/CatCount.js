@@ -1,9 +1,9 @@
 import React from 'react';
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend } from 'chart.js';
-import { Bubble } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Pie, Doughnut } from 'react-chartjs-2';
 import { Data } from "../utils/Data";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend);
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const CatCount = () => {
   const countEventTypes = (data) => {
@@ -21,19 +21,20 @@ const CatCount = () => {
   const eventCounts = countEventTypes(Data);
   const categories = Object.keys(eventCounts);
   const counts = Object.values(eventCounts);
-  const newCounts = counts.map((count)=>count)
-  console.log(newCounts)
 
-  const bubbleData = {
+  const chartData = {
     labels: categories,
     datasets: [{
       label: 'Event Counts',
-      data: newCounts.map((count, index) => ({
-        x: index + 1,
-        y: 1, 
-        r: count * 0.25 
-      })),
-      backgroundColor: 'rgba(75,192,192,0.6)',
+      data: counts,
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)',
+        'rgba(255, 159, 64, 0.6)',
+      ],
     }],
   };
 
@@ -45,26 +46,21 @@ const CatCount = () => {
       },
       title: {
         display: true,
-        text: 'Bubble Chart of Event Counts',
-      },
-    },
-    scales: {
-      x: {
-        title: {
-          display: true,
-          text: 'Categories',
-        },
-      },
-      y: {
-        display: false, 
+        text: 'Chart of Event Counts',
       },
     },
   };
 
   return (
-    <div className="cat-count w-[50%]">
-      <h2>Counting things</h2>
-      <Bubble data={bubbleData} options={options} />
+    <div className="cat-count w-[50%] grid grid-cols-2 grid-rows-2 gap-4">
+      <div className="col-span-1 row-span-1">
+        <Pie data={chartData} options={options} />
+      </div>
+      <div className="col-span-1 row-span-1">
+        Cell
+      </div>
+      <div className="col-span-1 row-span-1">Cell</div>
+      <div className="col-span-1 row-span-1">Cell</div>
     </div>
   );
 };
