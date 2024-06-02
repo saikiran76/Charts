@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Charts Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Techstack
+<img width="100" src="https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png" alt="React">
+<img width="100" src="https://static-00.iconduck.com/assets.00/javascript-icon-512x512-q5abze8k.png" alt="React">
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This is a Dashboard page built using React which makes use of libraries like `react-charts-2` , `recharts` for chart components. Based on the network security related data for different kind of activities like anamoilies, or potential or suspicious activities. (while connection to MYSQL Database)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For more visit the official docs of react-spring, Firebase, material-ui(mui-rte): 
+`https://recharts.org/en-US/`
+`https://react-chartjs-2.js.org/components`
+`https://www.chartjs.org/docs/latest/getting-started/`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Report on Component Structure and Managament of states 
+### Component Structure
+### Chart Components
+- Pie Chart/ Dashbord component
+- Area plot Component
+- BarChart component
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Snaps of the project
+![image](https://github.com/saikiran76/Charts/assets/80874246/281832ae-d7db-4d1f-8a92-4b39967009b7)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://github.com/saikiran76/Charts/assets/80874246/be71b967-7d11-4617-8656-48d79c9fce46)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://github.com/saikiran76/Charts/assets/80874246/3353c011-1833-4c55-b6c5-d5ef200c3f55)
 
-### `npm run eject`
+![image](https://github.com/saikiran76/Charts/assets/80874246/cd2b578e-ecc1-407c-aab2-ea276c9409b6)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Local Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1) Clone the project using the command `git clone https://github.com/saikiran76/Charts.git`
+2) cd into the project: `cd Charts`
+3) Install the required dependencies using: `npm install`
+4) Start and run the project on local host: `npm start`
