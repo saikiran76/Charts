@@ -52,15 +52,9 @@ const CatCount = () => {
   };
 
   return (
-    <div className="cat-count w-[50%] grid grid-cols-2 grid-rows-2 gap-4">
-      <div className="col-span-1 row-span-1">
-        <Pie data={chartData} options={options} />
-      </div>
-      <div className="col-span-1 row-span-1">
-        Cell
-      </div>
-      <div className="col-span-1 row-span-1">Cell</div>
-      <div className="col-span-1 row-span-1">Cell</div>
+    <div className="cat-count flex">
+      <Pie data={chartData} options={options} />    
+      <Doughnut data={chartData} options={options} />
     </div>
   );
 };

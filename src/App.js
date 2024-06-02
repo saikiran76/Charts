@@ -1,15 +1,17 @@
 import './App.css';
-import CatChart from './Components/CatChart';
 import CatCount from './Components/CatCount';
-import { Data } from './utils/Data';
+import TimeSeriesChart from './Components/TimeChart';
 
 function App() {
   return (
-    <div className="App bg-[#0F172A] text-white">
-      {/* <CatChart/> */}
-      <CatCount/>
-   
-    
+    <div className="App bg-[#0F172A] text-white grid grid-cols-2 grid-rows-2 gap-2 p-4">
+      <div className='col-span-1 row-span-1'>
+        <CatCount />
+      </div>
+      <div className='col-span-1 row-span-1'>
+        <TimeSeriesChart />
+      </div>
+      {/* Add other components or content here if needed */}
     </div>
   );
 }
