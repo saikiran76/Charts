@@ -1,3 +1,9 @@
+/**
+ * Area Chart to observe the severity
+ * observed: constant severity over time (in Hours & minutes)
+ * library used: recharts
+ */
+
 import React from 'react';
 import {
   ResponsiveContainer,
@@ -38,7 +44,7 @@ const AreaChartComponent = () => {
     <ResponsiveContainer width="100%" height={400}>
       <AreaChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="date" />
+        <XAxis dataKey="date" fontSize="small" />
         <YAxis />
         <Tooltip content={<CustomTooltip />} />
         <Legend />

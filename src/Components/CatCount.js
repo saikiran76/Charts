@@ -1,3 +1,10 @@
+/**
+ * Categorical Distribution of different event types (alert, ..)
+ * Proposed visualization model: Pie Chart
+ * Library used: react-chartjs-2, chart,js
+ */
+
+
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie, Doughnut } from 'react-chartjs-2';
@@ -26,6 +33,7 @@ const CatCount = () => {
     labels: categories,
     datasets: [{
       label: 'Event Counts',
+      color:"white",
       data: counts,
       backgroundColor: [
         'rgba(255, 99, 132, 0.6)',
@@ -43,6 +51,10 @@ const CatCount = () => {
     plugins: {
       legend: {
         position: 'top',
+        labels:{
+          color: "white",
+          FontFace: "poppins"
+        }
       },
       title: {
         display: true,

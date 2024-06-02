@@ -1,3 +1,8 @@
+/**
+ * Bar Chart to represent count of categories of alert
+ */
+
+
 import React, { useMemo } from 'react';
 import {
   ResponsiveContainer,
