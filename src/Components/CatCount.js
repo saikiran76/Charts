@@ -52,8 +52,8 @@ const CatCount = () => {
   };
 
   return (
-    <div className="cat-count flex">
-      <Pie data={chartData} options={options} />    
+    <div className="cat-count sm:block md:flex lg:flex justify-center items-center sm:w-[50%] md:w-[40%] lg:w-[30%]">
+      <Pie data={chartData} options={options} />
       <Doughnut data={chartData} options={options} />
     </div>
   );
